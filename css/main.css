@@ -232,7 +232,7 @@
   --------------------------------------------- */
 
   #backImage{
-    background: url(/image/venice.jpg);
+    background: url(./image/venice.jpg);
     width: 100%;
     height: 100%;
     position: fixed;
