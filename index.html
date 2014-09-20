@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>justImages</title>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' 
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/responsive-nav.css">
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <div id="backImage"></div>
+
+  <header>
+      <div id="navBar">
+        <nav class="nav-collapse">
+          <ul>
+            <li><div class="active"> Photo Feed </div></li>
+            <li><div> Grid </div> </li>
+            <li><div> Slideshow </div></li>
+            <li><div id="logoutButton"> Logout </div></li>
+          </ul>
+        </nav>
+      </div>	
+  </header>
+
+  <div id="mainPage">
+  	<div id="picture"></div>
+    <div id="status"></div>
+    <div id="login">
+          <div id="tagline">Your digital photo frame</div>
+          <div id="logo"><img src="image/icon-small.png" ></div>
+          <fb:login-button scope="public_profile,user_photos" onlogin="checkLoginState();" size="xlarge">
+          </fb:login-button>
+        </div>
+    <div id="imageList"></div>
+  </div>
+  <footer>
+    Press Enter to set photo.
+  </footer>
+
+  <script src="js/responsive-nav.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
