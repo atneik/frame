@@ -37,8 +37,8 @@
 
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '933494109999598',   //for locally hosted test App
-      //appId      : '931973756818300', //for deployment
+      //appId      : '933494109999598',   //for locally hosted test App
+      appId      : '931973756818300', //for deployment
       cookie     : true,  // enable cookies to allow the server to access 
                           // the session
       xfbml      : true,  // parse social plugins on this page
