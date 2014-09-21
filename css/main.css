@@ -94,7 +94,7 @@
     width: 100%;
   }
 
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 500px) {
     .nav-collapse li {
       width: 25%;
     }
@@ -139,7 +139,7 @@
     border-bottom: 5px solid black;
   }
 
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 500px) {
     .nav-collapse a {
       margin: 0;
       padding: 1em;
@@ -155,7 +155,7 @@
     padding-left: 2em;
   }
 
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 500px) {
     .nav-collapse ul ul a {
       display: none;
     }
@@ -232,7 +232,7 @@
   --------------------------------------------- */
 
   #backImage{
-    background: url(../image/venice.jpg);
+    background-image: url(../image/venice.jpg);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -243,14 +243,37 @@
     background-size: cover;
   }
 
+  #overLay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    position: fixed;
+    z-index: -50;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+ 
+  }
+
   #picture img {
     border-radius: 50%;
-    /*border: 5px solid black;*/
     -webkit-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.75);
   }
+
+  #picture img:hover {
+    -webkit-box-shadow: 0px 0px 50px 1px #f4421a;
+    -moz-box-shadow: 0px 0px 50px 1px #f4421a;
+    box-shadow: 0px 0px 50px 1px #f4421a;
+  }
+
   #logo img{
+      
       width: 30%;
   }
 
@@ -260,7 +283,7 @@
   }
   #imageList{
     margin: auto;
-    background-color: rgba(0,0,0,0.65);
+    /*background-color: rgba(0,0,0,0.65);*/
   }
   #imageList div img{
     width: 80%;
@@ -272,13 +295,7 @@
     font-weight: 400;
     font-size: 2.0em;
     color: white;
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
   }
 
   #tagline{
@@ -287,7 +304,7 @@
     z-index: 100;
   }
 
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 500px) {
     #status, #tagline {
       font-size: 3.0em;
     }
