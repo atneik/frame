@@ -108,8 +108,8 @@
           2) have width greater than height (design decision for landscape pictures)
     */
     FB.api('/me?fields=photos.limit(30){images}', function(response) {
+      console.log(response.photos);
       var imageData = response.photos.data;
-      //console.log(response.photos.data);
       for (var i = 0; i < imageData.length; i++) {
         for (var j = 0; j < imageData[i].images.length; j++) {
           if(imageData[i].images[j].width <= screen.width){
